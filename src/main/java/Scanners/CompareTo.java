@@ -15,19 +15,40 @@ import java.util.Scanner;
 public class CompareTo {
 
     public static void main(String[] args) throws FileNotFoundException {
-        File f = new File("data//names.txt");
-        Scanner sc = new Scanner(f);
+        File docFile = new File("data//names.txt");
+        Scanner docSc = new Scanner(docFile);
 
-        String mostAlphabetical = sc.next();
-        String next = sc.next();
-
-        while (sc.hasNext()) {
-            int val = mostAlphabetical.compareTo(next);
-
-            if (val > 0) {
-                mostAlphabetical = next;
-            }
-        sc.next();
+        String firstPerson = docSc.nextLine();
+        Scanner personSc = new Scanner(firstPerson);
+        String firstName = personSc.next();
+        String lastName = personSc.next();
+        while (personSc.hasNext()) {
+            lastName = personSc.next();
         }
+
+        String mostAlph = firstName;
+        String longestName = lastName;
+
+        while (docSc.hasNextLine()) {
+            String nextPerson = docSc.next();
+            personSc = new Scanner(nextPerson);
+            firstName = personSc.next();
+            lastName = personSc.next();
+            while (personSc.hasNext()) {
+                lastName = personSc.next();
+            }
+
+            if (firstName.compareTo(mostAlph) > 0) {
+                mostAlph = firstName;
+            }
+
+            if (lastName.compareTo(longestName) > 0) {
+                longestName = lastName;
+            }
+
+        }
+
+        System.out.println("The most alph name is" + mostAlph);
+        System.out.println("The longest name is" + longestName);
     }
 }
