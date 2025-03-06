@@ -19,7 +19,7 @@ public class PP_GR10_NovExam_2023 {
         } // while
         String inputWeight = JOptionPane.showInputDialog("Enter weight in kg of player");
          String inputHeight = JOptionPane.showInputDialog("Enter height in cm of player");
-         double ave = oneRecruit(inputName,inputHeight ,inputWeight);
+         //double ave = oneRecruit(inputName,inputHeight ,inputWeight);
     }//main
  public static double oneRecruit(String name, double height , double weight) {
      System.out.println("Name:" +  name);
