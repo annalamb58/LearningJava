@@ -21,7 +21,7 @@ public class AsendingArrays {
             if (lowest > next) {
                 lowest = next;
             }//if
-            output[] = output[] + lowest;
+           // output[] = output[] + lowest;
         } //for
        
     }//psvm
