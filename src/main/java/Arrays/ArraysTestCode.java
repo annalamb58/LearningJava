@@ -15,6 +15,7 @@ import java.util.logging.Logger;
  * @author Anna
  */
 public class ArraysTestCode {
+    //14/03
     public static void main(String[] args) {
         try {
             int[] array = new int [100];
@@ -42,3 +43,8 @@ public class ArraysTestCode {
         }//catch
     }//psvm
 }//class
+
+
+//Questions 
+//How is max being used, what is it doing
+//what are the methods called
