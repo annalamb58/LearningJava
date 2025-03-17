@@ -11,6 +11,7 @@ package Arrays;
 public class BinarySearch {
     //14/03
     //only works on sorted arrays 
+     // due to not having typed method, it is wrong
     public static void main(String[] args) {
          int[] array = {1, 6, 5, 99, 45};
         //public static in binarySearch (int[] array, int value) {
