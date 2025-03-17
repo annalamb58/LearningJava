@@ -10,6 +10,7 @@ package Arrays;
  */
 public class LinearSearch {
 //14/03
+    // due to not having typed method, it is wrong
     public static void main(String[] args) {
         int[] array = {1, 6, 5, 99, 45};
         //public static int theLinearSearch(int[] array, int value) {

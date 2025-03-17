@@ -9,6 +9,7 @@ package Arrays;
  * @author anna
  */
 public class BubbleSection {
+    //bubble sort
     public static void main(String[] args) {
         int[] array = {1,6,5,99,45};
         
