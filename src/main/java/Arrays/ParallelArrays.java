@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * @author Anna
  */
 public class ParallelArrays {
-
+// class scope
     public static String[] names = new String[100];
     public static int[] marks = new int[100];
     public static int size = 0;
@@ -32,6 +32,7 @@ public class ParallelArrays {
                 String name = scL.next();
                 int mark = scL.nextInt();
                 
+                //adding to both arrays
                 marks[size] = mark;
                 names[size] = name;
                 size ++;
@@ -41,15 +42,25 @@ public class ParallelArrays {
         catch (FileNotFoundException ex) {
             Logger.getLogger(ParallelArrays.class.getName()).log(Level.SEVERE, null, ex);
         }//catch
-               
+        
+        bubbleSortMarks();
+        print();
+        
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        bubbleSortNames();
+        print();
+        
     } //main
     
     public static void bubbleSortMarks(){
-       for (int i = size; i < 0; i--) {
+       for (int i = size -1 ; i > 0; i--) {
            boolean sorted = true;
            
-           for (int j = 0; j < 0; j++) {
+           for (int j = 0; j < i; j++) {
                if (marks[j] > marks[j+1]) {
+               //comparing marks
                    
                   int tempMark = marks[j];
                   marks[j] = marks[j+1];
@@ -67,13 +78,23 @@ public class ParallelArrays {
      
     }//bubble
     
+    public static void print(){
+        for (int i = 0; i < size; i++) {
+            System.out.println(names[i] + " " + marks[i]);
+            
+        }
+    }//print
+    
+    
+    
     public static void bubbleSortNames(){
-       for (int i = size; i < 0; i--) {
+       for (int i = size -1 ; i > 0; i--) {
            boolean sorted = true;
            
-           for (int j = 0; j < 0; j++) {
-               if (marks[j] > marks[j+1]) {
-                   
+           for (int j = 0; j < i; j++) {
+               if (names[j].compareToIgnoreCase(names[j+1]) > 0) {
+                  //comparing names
+                  
                   int tempMark = marks[j];
                   marks[j] = marks[j+1];
                   marks[j+1] = tempMark;

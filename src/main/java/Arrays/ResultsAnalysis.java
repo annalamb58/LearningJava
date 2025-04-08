@@ -47,8 +47,8 @@ public class ResultsAnalysis {
                 }//high
                 total = total + result;
                 //I do not know what to do here
-                ave = total total * 1.0 / size;
-                results[75];
+//                ave =  total * 1.0 / size;
+//                results[75];
                 // I still do not understand question 7
                 // I know what it is wanting me todo but I do not know how to do it.
             }//while

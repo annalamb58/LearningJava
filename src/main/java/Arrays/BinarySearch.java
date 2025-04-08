@@ -17,12 +17,14 @@ public class BinarySearch {
         //public static in binarySearch (int[] array, int value) {
         int start = 0;
         int end = array.length -1;
+        int value = 0;
+        int position = -1;
         
         while (start <= end) {            
             int middle = (start + end)/2;
             
             if (array[middle] == value) {
-                return middle;
+                position = middle;
             } else if(array[middle] > value) {
                 end = middle-1;
             }//elseif
@@ -30,7 +32,7 @@ public class BinarySearch {
                 start = middle +1;
             }//else
         }//while
-        return -1;
+        System.out.println(position);
         // } method
     }// psvm
 }//class

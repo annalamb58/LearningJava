@@ -15,9 +15,9 @@ public class LinearSearch {
         int[] array = {1, 6, 5, 99, 45};
         //public static int theLinearSearch(int[] array, int value) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == value) { // beause value is from og method
+//            if (array[i] == value) { // beause value is from og method
                 //return[i];
-            }
+//            }
         } // for
         //return -1;
         // }// theLinearSearch method
