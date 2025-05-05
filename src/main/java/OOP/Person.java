@@ -8,16 +8,27 @@ package OOP;
  *
  * @author Anna
  */
+// encapsultion **** bundling methods and data together into objects 
+// making objects
 public class Person {
+    // non-static variables
+    // each object gets a copy 
     private String name;
     private int age;
     private double height;
+    private double weight;
+ 
+    // static variables
+    // all objects share this variable
+    public static int numPeople = 0;
     
-    public Person (String name, int age, double height){
+    
+    public Person (String name, int age, double height, double weight){
         this.name = name;
         this.age = age;
         this.height = height;
-    }
+        this.weight = weight;
+    }// constructor
 
     public void setName(String name) {
         this.name = name;
@@ -44,4 +55,17 @@ public class Person {
     }
     
 //  source, insert code, getter  
+    
+    
+    public double calculateBMI(){
+        return weight/Math.pow(height, 2);
+    }
+    
+    public void printName(){
+        System.out.println(name);
+    }
+    
+    public String toString(){
+        return "Name: " + name + ", Age: " + age;
+    }
 }//class

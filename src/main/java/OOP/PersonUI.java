@@ -9,5 +9,7 @@ package OOP;
  * @author Anna
  */
 public class PersonUI {
-    Person p = new Person ("Anna", 18, 5.2);
+    //the personUI (text interface) using the objects (in Person)
+    // using objects
+    Person p = new Person ("Anna", 18, 5,2);
 }//class
