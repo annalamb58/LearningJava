@@ -11,5 +11,9 @@ package OOP;
 public class PersonUI {
     //the personUI (text interface) using the objects (in Person)
     // using objects
-    Person p = new Person ("Anna", 18, 5,2);
+    //Person p = new Person ("Anna", 18, 5,2);
+    public static void main(String[] args) {
+         PersonManager pm = new PersonManager(); 
+         System.out.println(pm.toString());
+    } // psvm     
 }//class
