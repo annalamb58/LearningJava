@@ -76,7 +76,7 @@ public class PersonManager {
      public String toString(){
             String output = "";
             for (int i = 0; i < size; i++) {
-                output += people[i].toString();
+                output += people[i].toString() + "\n";
                 
             }//for
             return output;
