@@ -75,6 +75,46 @@ public class ISPConnection {
     }//vIP
 
     public String displayDate() {
+        // dd/mm/yy to year-monthinwords-day
+        Scanner scDate = new Scanner(date).useDelimiter("\\/");
+        String word = " ";
+        int day = scDate.nextInt();
+        String month = scDate.next();
+        int year = scDate.nextInt();
+
+        switch (month) {
+            case "01":
+                word = "January";
+                break;
+            case 02:
+                word = "February";
+                break;
+            case 03:
+                word = "March";
+                break;
+            case 04:
+                word = "April";
+                break;
+            case 05:
+                word = "May";
+                break;
+            case 06:
+                word = "June";
+                break;
+            case 07:
+                word = "July";
+                break;
+            case 08:
+                word = "August";
+                break;
+            case 09:
+                word = "January";
+                break;
+            case 10:
+                word = "February";
+                break;
+
+        }// switch
 
         return "";
     }//disDate
