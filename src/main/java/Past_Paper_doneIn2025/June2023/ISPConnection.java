@@ -81,42 +81,52 @@ public class ISPConnection {
         int day = scDate.nextInt();
         String month = scDate.next();
         int year = scDate.nextInt();
+        
+//        int month = sc.nextInt() - 1;
+//        String[] months = {"Jan", "Feb"};
+//        String monthName = months[month];
 
         switch (month) {
             case "01":
                 word = "January";
                 break;
-            case 02:
+            case "02":
                 word = "February";
                 break;
-            case 03:
+            case "03":
                 word = "March";
                 break;
-            case 04:
+            case "04":
                 word = "April";
                 break;
-            case 05:
+            case "05":
                 word = "May";
                 break;
-            case 06:
+            case "06":
                 word = "June";
                 break;
-            case 07:
+            case "07":
                 word = "July";
                 break;
-            case 08:
+            case "08":
                 word = "August";
                 break;
-            case 09:
-                word = "January";
+            case "09":
+                word = "September";
                 break;
-            case 10:
-                word = "February";
+            case "10":
+                word = "October";
+                break;
+            case "11":
+                word = "November";
+                break;
+            case "12":
+                word = "December";
                 break;
 
         }// switch
 
-        return "";
+        return word;
     }//disDate
 
 }//class
